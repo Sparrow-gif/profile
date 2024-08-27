@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-switch@3.3.4/dist/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container-fluid py-1">
+            <!-- Exit Icon -->
+            <span class="navbar-icon"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+            
+            <!-- Right Icons -->
+            <div class="ms-auto form-check form-switch d-flex">
+                <span class="navbar-icon"><input class="form-check-input" type="checkbox" id="darkModeToggle"> </span>
+            </div>
+        </div>
+    </nav>
+
+<main class="container">
+
+    <!-- Profile Header -->
+    <div class="author-header">
+        <div class="author-profile">
+            <img src="https://picsum.photos/80" alt="Author Image" data-toggle="modal" data-target="#profileImageModal">
+        </div>
+        <div class="profile-name">
+           <h1> Somnath Pal  </h1>
+           <span> I'm a <span class="multiText"> </span></span>
+      </div>
+        <button class="btn btn-dark btn-edit" id="alertBtn"> Download CV </button>
+        <a href="#contact" class="btn btn-primary btn-save"> Contact Me </a>
+    </div>
+
+    <!-- Tabs for navigation -->
+    <div class="tab-section my-2">
+        <ul class="nav nav-tabs justify-content-start">
+            <li class="nav-item">
+                <a class="nav-link active" href="#about-section"> About </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skill"> Skill </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Services"> Services </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Resume"> Resume </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Project"> Project </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-------------------------------------------------------------------------------
+     ------------------------------------- Posts Section -----------------------------
+     --------------------------------------------------------------------------------->
+    <div class="tab-content about-section" id="about-section">
+        <button class="btn btn-about">About Me</button>
+        <h2> Who Am I?</h2>
+        <p>
+           I am Somnath, I started my programming journey in developing dynamic website since 2021.
+           Before that, I started designing on Photoshop. I am always striving to develop myself and my skills.
+           I have many website and project on the Google, and I also sell my project on the Codecanyon    Market,
+           and I offer my best services to customers.
+        </p>
+        <h4>You Can Follow Me also Here</h4>
+        <div class="social-icons mt-3">
+            <a href="#" class="instagram" data-aos="zoom-in-up"><i class="fab fa-instagram" ></i>INSTAGRAM</a>
+            <a href="#" class="behance" data-aos="fade-up-left"><i class="fab fa-behance"></i>BEHANCE</a>
+            <a href="#" class="facebook" data-aos="zoom-in-up"><i class="fab fa-facebook-f"></i>FACEBOOK</a>
+        </div>
+    </div>
+
+<hr>
+
+    <div class="tab-content p-3 mt-3" id="skill">
+        <h1 class="text-center"> Technical Skills </h1>
+        <p class="text-center">
+           I am an intermediat in web Development, Graphic Design, HTML, PHP. So I guarantee that you will find high quality and uniqueness in my work.
+       </p>
+        <div class="skills py-2">
+            <div class="mb-4">
+                <h5> CSS </h5>
+                <div class="skill-bar">
+                    <div class="percentage-label">90%</div>
+                    <div class="skill-bar-fill bg-primary" data-width="90%"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h5>JavaScript </h5>
+                <div class="skill-bar">
+                    <div class="percentage-label">60%</div>
+                    <div class="skill-bar-fill bg-success" data-width="60%"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h5>Adobe Photoshop</h5>
+                <div class="skill-bar">
+                    <div class="percentage-label">75%</div>
+                    <div class="skill-bar-fill bg-danger" data-width="75%"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h5>HTML</h5>
+                <div class="skill-bar">
+                    <div class="percentage-label">95%</div>
+                    <div class="skill-bar-fill bg-info" data-width="95%"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h5>PHP</h5>
+                <div class="skill-bar">
+                    <div class="percentage-label">50%</div>
+                    <div class="skill-bar-fill bg-warning" data-width="50%"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h5>Bootstrap</h5>
+                <div class="skill-bar">
+                    <div class="percentage-label">85%</div>
+                    <div class="skill-bar-fill bg-danger" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h5>C</h5>
+                <div class="skill-bar">
+                    <div class="percentage-label">70%</div>
+                    <div class="skill-bar-fill bg-info" data-width="70%"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h5>C++</h5>
+                <div class="skill-bar">
+                    <div class="percentage-label">55%</div>
+                    <div class="skill-bar-fill bg-warning" data-width="55%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<hr>
+
+    <div class="tab-content p-3" id="Services">
+        <h1 class="text-center">What I Do ?</h1>
+        <div class="row justify-content-start mt-4">
+
+            <!-- Web Design -->
+            <div class="col-md-4 mb-4" data-aos="fade-up-right">
+                <div class="service-card" style="background-color: #5b5bf1;">
+                    <div class="service-icon">
+                        <img src="https://img.icons8.com/color/96/000000/web-design.png" alt="Web Design Icon">
+                    </div>
+                    <div class="service-title">Web Design</div>
+                    <div class="service-description">
+                        I create modern and responsive websites tailored to your needs.
+                    </div>
+                </div>
+            </div>
+            <!-- SEO -->
+            <div class="col-md-4 mb-4" data-aos="fade-up-left">
+                <div class="service-card" style="background-color: #9b59b6;">
+                    <div class="service-icon">
+                        <img src="https://img.icons8.com/color/96/000000/combo-chart.png" alt="Analysis Icon">
+                    </div>
+                    <div class="service-title">SEO</div>
+                    <div class="service-description">
+                        I optimize your website to rank higher in search engine results and attract more traffic.
+                    </div>
+                </div>
+            </div>
+            <!-- Content Writing -->
+            <div class="col-md-4 mb-4" data-aos="fade-up-right">
+                <div class="service-card" style="background-color: #5bb9f1;">
+                    <div class="service-icon">
+                        <img src="https://img.icons8.com/color/96/000000/edit-property.png" alt="Content Writing Icon">
+                    </div>
+                    <div class="service-title">Content Writing</div>
+                    <div class="service-description">
+                        I provide engaging and high-quality content that speaks to your audience.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up-left">
+                <div class="service-card" style="background-color: #e67e22;">
+                    <div class="service-icon">
+                        <img src="https://img.icons8.com/color/96/000000/graph.png" alt="Analysis Icon">
+                    </div>
+                    <div class="service-title">Analysis</div>
+                    <div class="service-description">
+                        Providing in-depth analysis and insights to help you make data-driven decisions.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up-right">
+                <div class="service-card" style="background-color: #f15b5b;">
+                    <div class="service-icon">
+                        <img src="https://img.icons8.com/color/96/000000/pencil--v1.png" alt="Graphics Design Icon">
+                    </div>
+                    <div class="service-title">Graphics Design</div>
+                    <div class="service-description">
+                        I do beautiful, simple and creative designs with professionalism.
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+<hr>
+
+    <div class="tab-content p-3" id="Resume">
+        <h1 class="education-title">Education</h1>
+    
+    <!-- College Education -->
+    <div class="card" data-aos="zoom-in-right">
+        <div class="card-header bg-danger">
+            2023 - Present
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"> Dasnagar Govt. Polytechnic, HOWRAH </h5>
+            <p class="card-text education-info"> Information Technology & engineering </p>
+            <p class="card-text education-info">CGPA: 6.06 (Till 1st Semester)</p>
+        </div>
+    </div>
+
+    <!-- ITI Education -->
+    <div class="card" data-aos="zoom-in-left">
+        <div class="card-header bg-success">
+            2022 - 2023
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"> Binpur-II Govt. ITI </h5>
+            <p class="card-text education-info"> NCVT </p>
+            <p class="card-text education-info"> Percentage: 92.2% </p>
+        </div>
+    </div>
+
+    <!-- Higher Secondary Education -->
+    <div class="card" data-aos="zoom-in-right">
+        <div class="card-header bg-info">
+            2021 - Null
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"> Jhargram Raj Collage </h5>
+            <p class="card-text education-info">Board: Null  </p>
+            <p class="card-text education-info">Percentage: Null </p>
+        </div>
+    </div>
+
+    <!-- Higher Secondary Education -->
+    <div class="card" data-aos="zoom-in-left">
+        <div class="card-header bg-warning">
+            2020 - 2021
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Higher Secondary Examination</h5>
+            <p class="card-text education-info">Board: West Bengal Council of Higher Secondary Education</p>
+            <p class="card-text education-info">Percentage: 78.00%</p>
+        </div>
+    </div>
+
+    <!-- Secondary Education -->
+    <div class="card" data-aos="zoom-in-right">
+        <div class="card-header bg-primary">
+            2018 - 2019
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Secondary Examination</h5>
+            <p class="card-text education-info">Board: West Bengal Board of Secondary Education</p>
+            <p class="card-text education-info">Percentage: 74.85%</p>
+        </div>
+    </div>
+
+    </div>
+  
+
+<hr>
+  
+    <div class="tab-content p-3" id="Project">
+            <h1 class="text-center mb-4">Our Projects</h1>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up">
+                    <a href="#" class="d-block">
+                        <div class="project-item">
+                            <img src="https://picsum.photos/300/200?random=1" alt="Project 1" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up">
+                    <a href="#" class="d-block">
+                        <div class="project-item">
+                            <img src="https://picsum.photos/300/200?random=2" alt="Project 2" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up">
+                    <a href="#" class="d-block">
+                        <div class="project-item">
+                            <img src="https://picsum.photos/300/200?random=3" alt="Project 3" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up">
+                    <a href="#" class="d-block">
+                        <div class="project-item">
+                            <img src="https://picsum.photos/300/200?random=4" alt="Project 4" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up">
+                    <a href="#" class="d-block">
+                        <div class="project-item">
+                            <img src="https://picsum.photos/300/200?random=5" alt="Project 5" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up">
+                    <a href="#" class="d-block">
+                        <div class="project-item">
+                            <img src="https://picsum.photos/300/200?random=6" alt="Project 6" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <!-- Add more project items as needed -->
+            </div>
+        
+    </div>
+
+<hr>
+
+    <div class="tab-content p-4" id="contact">
+        <h3 class="text-center mb-4">How Can I Help You?</h3>
+        <p>Let's talk about everything!</p>
+        <p>Don't like forms? Send me an <a href="mailto:support@ibrahimodeh.com">email</a>.</p>
+
+        <form id="contactForm" class="my-4">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Send Message</button>
+        </form>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container">
+        <h2 class="footer-text">
+            Stay Connected With Me
+        </h2>
+        <div class="footer-email">
+            <a href="mailto:support@ibrahimodeh.com" style="color: #fff;"> pal116719@gmail.com </a>
+        </div>
+        <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-skype"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="mt-4">
+            <p>Copyright © 2021-2024 Somnath Pal. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Profile Image Modal -->
+  <div class="modal fade" id="profileImageModal" tabindex="-1" aria-labelledby="profileImageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center position-relative">
+          <div class="close-button" data-dismiss="modal">
+            <span>&times;</span>
+          </div>
+          <img src="https://picsum.photos/640" alt="Author Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+     var typed = new Typed('.multiText', {
+            strings: ["Developer.", "Web Designer."],
+            loop: true, 
+            typeSpeed: 100, 
+            backSpeed: 60, 
+            startDelay: 500, 
+            backDelay: 1500, 
+        });
+  </script>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+         offset: 160, 
+         delay: 0, 
+         duration: 650, 
+         easing: 'ease', 
+         once: false, 
+         mirror: false, 
+         anchorPlacement: 'top-bottom',
+    });
+  </script>
+
+  <script>
+        document.getElementById('darkModeToggle').addEventListener('change', function() {
+            document.body.classList.toggle('dark-mode', this.checked);
+            document.querySelector('.author-header').classList.toggle('dark-mode', this.checked);
+            document.querySelector('.nav-link').classList.toggle('dark-mode', this.checked);
+        });
+    </script>
+
+</body>
+</html>
