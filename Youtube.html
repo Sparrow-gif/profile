@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Intro Animation</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: ;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .intro-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .logo-circle {
+      position: absolute;
+      width: 110px;
+      height: 80px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ff0000;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: pulseLogo 2s ease-in-out infinite, expandLogo 2s ease-in-out forwards 2s;
+    }
+
+    .logo-play {
+      width: 0;
+      height: 0;
+      border-left: 20px solid white;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      transform: translateX(3px);
+    }
+
+    @keyframes pulseLogo {
+      0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+
+    @keyframes expandLogo {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      70% {
+        transform: translate(-50%, -50%) scale(50);
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(100);
+      }
+    }
+
+    .background-circle {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ff0000;
+      border-radius: 50%;
+      z-index: -1;
+      animation: pulseBackground 4s infinite;
+    }
+
+    @keyframes pulseBackground {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0.3;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="intro-container">
+    <div class="background-circle"></div>
+    <div class="logo-circle">
+      <div class="logo-play"></div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      setTimeout(function() {
+        window.location.href = "https://www.youtube.com/"; // Replace with your main page URL
+      }, 4000); // Adjust timing for the full animation
+    });
+  </script>
+
+</body>
+</html>
