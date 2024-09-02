@@ -373,11 +373,15 @@
                      </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up">      <!------Project 06-------->
-                    <a href="#" class="d-block">
-                        <div class="project-item">
-                            <img src="https://picsum.photos/300/200?random=6" alt="Project 6" class="img-fluid">
+                    <div class="image-container">
+                       <img src="https://picsum.photos/300/200?random=5" alt="Sample Image 1">
+                       <div class="icon-overlay">
+                          <!-- Show Icon -->
+                          <i class="bi bi-eye-fill icon" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageModal('https://picsum.photos/id/1011/600/400')"></i>
+                          <!-- Link Icon -->
+                          <i class="bi bi-link-45deg icon" onclick="window.location.href='https://www.example1.com'"></i>
                         </div>
-                    </a>
+                     </div>
                 </div>
                 <!-- Add more project items as needed -->
             </div>
