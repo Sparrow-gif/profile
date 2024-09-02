@@ -331,6 +331,9 @@
         .image-container:hover .icon-overlay {
             opacity: 1;
         }
+     .modal-header {
+             background:#ffffff;
+     }
 
 /*****************************************************/
     
