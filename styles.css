@@ -296,7 +296,9 @@
             width: 100%;
             max-width: 300px;
             margin-bottom: 20px;
+            transition-duration:0.3s;
         }
+    .image-container:hover { transform:scale(1.05)   }
         .image-container img {
             width: 100%;
             height: auto;
