@@ -109,7 +109,7 @@
       background: none;
       border: none;
     }
-    .close-button {
+    .modal-content .close-button {
       position: absolute;
       top: 0px;
       right: 0px;
